@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Copy Mania-Controle</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="src/style/global.css">
+
+	<link rel="stylesheet" type="text/css" href="src/style/dash.css">
+
+</head>
+<body>
+	<header>
+		<div>
+			<img src="src/img/logo.png">
+			<h1>Dashetoboard</h1>
+		</div>
+		<button>Menu</button>
+	</header>
+	<main>
+		<div class="container-dash">
+			<nav>
+				<ul>
+					<li class="active" ><a href="#">Produtos</a></li>
+					
+					<li><a href="#">Novo Produto</a></li>
+					
+					<li><a href="#">Categorias</a></li>
+					
+					<li><a href="#">Novo Categoria</a></li>
+
+				</ul>
+			</nav>
+
+			<div class="list-produtos">
+
+				<div class="filtro">
+					<label >
+						<strong>Filtro</strong>
+						<select>
+							<option>Categoria</option>
+							<option>Status</option>
+						</select>
+
+					</label>
+					<span>Páginas 10 de 20</span>
+				</div>
+
+				<ul id="list-produtos-out">
+                    <li>
+                        <img src="img-demo/demo.jpg" >
+                        <strong>Epson multfuncional ecotank L3150</strong>
+                        <span>A vista: R$120,00r</span>
+                        <span>Ou em até 10 x R$230,00</span>
+
+                        <div class="grup-button">
+                        	<button>Editar</button>
+                        	<button>Excluir</button>
+                    	</div>
+                        
+                    </li>
+
+				</ul>
+			
+
+					<div class="btn-paginacao">
+						<ul>
+							<li><a href="#">Anterior</a></li>
+							<li><a href="#">Proxima</a></li>
+						</ul>
+					</div>
+			</div>
+
+
+		</div>
+	</main>
+
+	<script type="text/javascript" src="src/services/list-products.js" ></script>
+
+</body>
+</html>

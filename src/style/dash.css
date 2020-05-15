@@ -1,0 +1,73 @@
+.container-dash nav ul{
+	max-width: 1024px;
+	margin: auto;
+	padding: 20px;
+	color: #333;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+.container-dash nav ul li,.container-dash nav ul li a{
+	color: #333;
+	opacity: 0.8;
+}
+.container-dash nav ul li.active,nav ul li :hover{
+	border-bottom: 1px solid #333;
+	opacity: 10;
+}
+.container-dash .list-produtos{
+	padding: 20px;
+
+}
+.container-dash .list-produtos ul {
+	max-width: 1024px;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.container-dash .list-produtos ul li{
+	border:1px solid  grey;
+	border-radius: 3px;
+	padding: 8px;
+	margin: 10px;
+	max-width: 200px;
+	justify-content: center;
+	text-align: justify;
+
+	cursor: pointer;
+}
+.container-dash .list-produtos ul li img{
+	max-width: 100%;
+}
+.container-dash .list-produtos .grup-button{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.container-dash .list-produtos .grup-button button{
+	font-size: 14px;
+	font-weight: 500;
+}
+.container-dash .list-produtos .grup-button button + button{
+	background-color: #f95757;}
+
+.container-dash .list-produtos .btn-paginacao {
+	max-width: 1024px;
+	padding: 10px;
+	margin: auto;
+}
+.container-dash .list-produtos .btn-paginacao ul li a{
+	color: grey;
+}
+.container-dash .list-produtos .btn-paginacao ul li:hover{
+	background-color: #ddd;
+}
+.filtro{
+	color: #555;
+	max-width: 1024px;
+	margin: auto;
+}

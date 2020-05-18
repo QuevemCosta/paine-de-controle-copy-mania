@@ -38,7 +38,7 @@ function listProducts(produtcts){
 			grupButonsEle.setAttribute('class','grup-button');
 			
 			productEle.setAttribute('id',cod);
-			productEle.setAttribute('onclick',showUrl(cod))
+			//productEle.setAttribute('onclick',showUrl(cod))
 
 			productEle.appendChild(imageEle);
 			productEle.appendChild(textDescription);

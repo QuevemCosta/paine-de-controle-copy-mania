@@ -17,7 +17,7 @@
    width: 500px;
    max-width: 600px;
 }
-.container-form form input, .container-form form textarea{
+.container-form form input, .container-form form textarea, .container-form form select{
     width: 100%;
     border: 1px solid #ddd;
     border-radius: 3px;

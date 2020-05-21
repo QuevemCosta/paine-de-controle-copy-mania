@@ -12,7 +12,7 @@
 
 	<link rel="stylesheet" type="text/css" href="./style.css">
 
-</head>
+</head> 
 <body>
 	<header>
 		<div>
@@ -36,15 +36,18 @@
 					</ul>
 				</nav>
 		<div class="container-form">
-			<form>
+			<form  autocomplete="on" >
 				<label for="">
-					<input type="text" placeholder="Descrição">
+					<input 
+					 type="text"
+					 name="name" 
+					 placeholder="Descrição">
 				</label>
 
 				<h3>Detales do Produto</h3>
 				<textarea 
-				 name="" 
-				 id="" 
+				 name="descricao" 
+				 class="input-product" 
 				 cols="30" 
 				 rows="10" 
 				 placeholder="Detales do Produto">
@@ -52,36 +55,48 @@
 
 				<label for="">
 					<legend>R$ A vista</legend>
-					<input type="text" >
+					<input 
+					 type="text" 
+					 name="valorAvista"
+					 class="input-product"
+					 >
 				</label>
 
 				<label for="">
 					<legend>R$ A prazo</legend>
-					<input type="text">
+					<input 
+					 type="text"
+					 name="valorAprazo"
+					 class="input-product"
+					 >
 				</label>
 
 				<label for="">
 					<legend>Parcelas</legend>
-					<input type="namber">
+					<input 
+					 type="namber" 
+					 name="parcelas"
+					 class="input-product"
+					 >
 				</label>
 				
-				<select id="list-category">
+				<select id="list-category" class="input-product" name="categoria">
 					
 				</select>
 
-				<select name="" id="">
-					<option value="destaque">Status</option>
+				<select name="status" class="input-product">
+					<option value="">--Status--</option>
 					<option value="destaque">Destacar na Home</option>
-					<option value="destaque">Indisponivel</option>
+					<option value="indisponivel">Indisponivel</option>
 				</select>
 
 				<label for="">
-					<input type="file">
+					<input type="file" class="input-product" name="imagem">
 				</label>
 			
 				<div class="grup-button">
 					<button type="reset" >Limpar</button>
-					<button type="submit" >Salvar</button>
+					<button type="button" id="submit" >Salvar</button>
 				</div>
 
 			</form>	
@@ -94,7 +109,7 @@
 							<span>A vista: R$120,00r</span>
 							<span>Ou em até 10 x R$230,00</span>
 	
-							<div class="grup-button">
+							<div class="grup-button space-btn">
 								<button>Edita</button>
 								<button>Excluir</button>
 							</div>
@@ -107,6 +122,7 @@
 	</main>
 
 	<script type="text/javascript" src="../../services/list-categories.js" ></script>
+	<script type="text/javascript" src="../../services/create-product.js" ></script>
 
 </body>
 </html>

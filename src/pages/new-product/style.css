@@ -40,3 +40,9 @@
     max-width: 100%;
 
 }
+.container-form form div .space-btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
